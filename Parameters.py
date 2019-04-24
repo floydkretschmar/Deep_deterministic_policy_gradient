@@ -1,0 +1,89 @@
+
+#### Pendulum Parameters
+"""  # General parameters
+BATCH_SIZE = 64
+EPOCHS = 200
+FITTING_ITERATIONS = 3
+GAMMA = 0.9
+BUFFER_SIZE = 100000
+WASHOUT = 5000
+
+LEARN_ONLINE = True
+BATCH_ITERATIONS = 300
+
+# Frame skipping
+SKIP_FRAMES = False
+FRAME_SKIP = 20
+
+# Normalize actions
+NORMALIZE_ACTIONS = True
+
+# Early stopping
+EARLY_STOPPING = False
+WINDOW_SIZE = 3
+
+# resicual connections for agent
+USE_RESIDUALS = False
+
+# imitation learning parameters:
+USE_IMITATION_LEARNING = False
+IMITATION_BATCH_SIZE = 32
+IMITATION_BUFFER_SIZE = 10000
+IMITATION_LAMBDA = 1 / IMITATION_BATCH_SIZE
+
+# parameter noise
+PARAMETER_NOISE = False
+INITIAL_NOISE_STD = 0.3
+DESIRED_ACTION_STD = 0.1
+ADAPT_COEFFICIENT = 1.05
+
+# DDPG parameters
+TAU = 0.001
+ACTOR_LEARNING_RATE = 1e-4
+CRITIC_LEARNING_RATE = 1e-3
+ """
+#ACTOR_LEARNING_RATE = 0
+#CRITIC_LEARNING_RATE = 0
+
+#### Hockey Parameters
+# General parameters
+BATCH_SIZE = 256
+EPOCHS = 10000
+FITTING_ITERATIONS = 3
+GAMMA = 0.85
+BUFFER_SIZE = 1000000
+WASHOUT = 50000
+
+LEARN_ONLINE = True
+BATCH_ITERATIONS = 300
+
+# Frame skipping
+SKIP_FRAMES = True
+FRAME_SKIP = 5
+
+# Normalize actions
+NORMALIZE_ACTIONS = True
+
+# Early stopping
+EARLY_STOPPING = False
+WINDOW_SIZE = 3
+
+# resicual connections for agent
+USE_RESIDUALS = False
+
+# imitation learning parameters:
+USE_IMITATION_LEARNING = True
+IMITATION_BATCH_SIZE = 128
+IMITATION_BUFFER_SIZE = 10000
+IMITATION_LAMBDA = 1 / IMITATION_BATCH_SIZE
+
+# parameter noise
+PARAMETER_NOISE = True
+INITIAL_NOISE_STD = 1
+DESIRED_ACTION_STD = 0.1
+ADAPT_COEFFICIENT = 1.05
+
+# DDPG parameters
+TAU = 0.001
+ACTOR_LEARNING_RATE = 1e-4
+CRITIC_LEARNING_RATE = 1e-3
